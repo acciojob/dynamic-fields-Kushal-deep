@@ -50,8 +50,8 @@ const App = () => {
         fields.map((item,index)=>{
           return(
           <div key={index}>
-            <input type="text" value={item.name} name="name" onChange={(e)=>handlechange(index,"name",e.target.value)}></input>
-            <input type="number" value={item.age} name="age" onChange={(e)=>handlechange(index,"age",e.target.value)}></input>
+            <input type="text" value={item.name} name="name" placeholder="Name" onChange={(e)=>handlechange(index,"name",e.target.value)}></input>
+            <input type="number" value={item.age} name="age" placeholder="Age" onChange={(e)=>handlechange(index,"age",e.target.value)}></input>
             <button type="button" onClick={()=>handleremove(index)}>Remove</button>
 
             
